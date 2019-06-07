@@ -7,6 +7,14 @@ app.get("/", function(req, res) {
     res.send({"hello" : "there"});
   });
 
+  app.post("/api/textquery", function(req, res) {
+    res.send({"hello" : "there1"});
+  });
+
+  app.post("/api/eventquery", function(req, res) {
+    res.send({"hello" : "there2"});
+  });
+
 
 // Sets an initial port. We"ll use this later in our listener
 var PORT = process.env.PORT || 8080;
